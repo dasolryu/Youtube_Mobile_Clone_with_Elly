@@ -8,7 +8,9 @@
 	<script src="https://kit.fontawesome.com/bad65fdb77.js" crossorigin="anonymous"></script>
 	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 	<link rel="stylesheet" href="css/style.css"/>
+	<script src="main.js" defer></script>
 </head>
+
 <body>
 	<!--Header-->
 	<header>
@@ -21,10 +23,14 @@
 			<i class="fas fa-ellipsis-v"></i>
 		</div>
 	</header>
+	
 	<!-- Video Player -->
 	<section class="player">
-		<video controls src="video/Winter_puppy.mp4">
-		</section>
+		<video controls src="video/Winter_puppy.mp4"></video>
+	</section>
+
+	<!-- Video Info & Up Next-->
+	<div class="infoAndUpNext">
 		<!-- Video Info -->
 		<section class="info">
 			<!-- Meta Data -->
@@ -44,16 +50,16 @@
 			</div>
 			<!-- Actions -->
 			<ul class="actions">
-				<li><button><i class="fas fa-thumbs-up"><span>1K</span></i></button></li>
-				<li><button><i class="fas fa-thumbs-down"><span>10</span></i></button></li>
+				<li><button><i class="active fas fa-thumbs-up"></i><span>1K</span></button></li>
+				<li><button><i class="fas fa-thumbs-down"></i><span>10</span></button></li>
 				<li><button><i class="fas fa-share"></i><span>Share</span></button></li>
 				<li><button><i class="fas fa-plus"></i><span>Save</span></button></li>
-				<li><button><i class="fab fa-font-awesome-flag"><span>Report</span></i></button></li>
+				<li><button><i class="fab fa-font-awesome-flag"></i><span>Report</span></button></li>
 			</ul>
 			<!-- Channel Description -->
 			<div class="channel">
 				<div class="metadata">
-					<img src="image/avatar.png" alt="">
+					<img src="image/avatar.png" alt="" />
 					<div class="info">
 						<span class="name">CloneCoding by Ttochi</span>
 						<span class="subscribers">1M subscribers</span>
@@ -62,31 +68,32 @@
 				<button class="subscribe">subscribe</button>
 			</div>
 		</section>
-		<!-- Up Next video lists -->
-		<section class="UpNext">
+
+		<!-- Up Next -->
+		<section class="upNext">
 			<span class="title">Up next</span>
 			<ul>
-				<li class="items">
-					<img src="image/1.png" alt="">
-					<div class="info">
+				<li class="item">
+					<div class="img"><img src="image/1.png" alt=""/></div>
+					<div class="itemInfo">
 						<span class="title">1클론코딩 유튜브 사이트 따라 만들기(HTML+CSS 연습편, 웹 포트폴리오) | 프론트엔드 개발자 입문편: HTML, CSS, Javascript</span>
 						<span class="name">드림코딩 by 엘리</span>
 						<span class="views">82K views</span>
 					</div>
 					<button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
 				</li>
-				<li class="items">
-					<img src="image/2.png" alt="">
-					<div class="info">
+				<li class="item">
+					<div class="img"><img src="image/2.png" alt=""/></div>
+					<div class="itemInfo">
 						<span class="title">2클론코딩 유튜브 사이트 따라 만들기(HTML+CSS 연습편, 웹 포트폴리오) | 프론트엔드 개발자 입문편: HTML, CSS, Javascript</span>
 						<span class="name">드림코딩 by 엘리</span>
 						<span class="views">82K views</span>
 					</div>
 					<button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
 				</li>
-				<li class="items">
-					<img src="image/3.png" alt="">
-					<div class="info">
+				<li class="item">
+					<div class="img"><img src="image/3.png" alt=""/></div>
+					<div class="itemInfo">
 						<span class="title">3클론코딩 유튜브 사이트 따라 만들기(HTML+CSS 연습편, 웹 포트폴리오) | 프론트엔드 개발자 입문편: HTML, CSS, Javascript</span>
 						<span class="name">드림코딩 by 엘리</span>
 						<span class="views">82K views</span>
@@ -95,5 +102,6 @@
 				</li>
 			</ul>
 		</section>
-	</body>
-	</html>
+	</div>
+</body>
+</html>
